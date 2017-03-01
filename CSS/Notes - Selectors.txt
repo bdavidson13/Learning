@@ -1,0 +1,80 @@
+Style Rules
+
+Selector{
+propertyname:value;
+}
+
+Simple type selector finds simple types like body or div and applies rules to those types
+
+body{
+	background-color:#ccccc99;
+}
+
+id selector finds all elements with that id and applies rules to elements with that id
+
+#divWidget {
+	background-color:#ffffff;
+}
+
+class selector finds all elements with that class and applies rules to elements of that class
+
+.nav{
+	background-color:green;
+}
+
+you can stack rules by giving multiple selectors separated by ,
+
+h1,h2 {
+	background-color: blue;
+}
+
+Descendant Selectors
+they apply more specific element within element ex:
+
+div p {
+	background-color:ddddaa;
+}
+
+this would change background color of all paragraphs within a div. 
+if it was separated by , it would be a stacked selector and would apply to all divs and all paragraphs
+
+Child selectors
+
+a child selector selects element that is a direct child of another element ex:
+
+div > p {
+	background-color:green;
+}
+
+the differnce between child and descendant is descendant applies to any p within a div where as 
+child only applies to a p that is directectly inside.
+
+<div>
+	<p> This would be effected by child selectore </p>
+	<span>
+		<p> this would not be effected by child selector</p>
+	<span>
+</div>
+if you use the Descendant selector both p's would be effected not just the first
+
+Attribute selector
+selects elements that have the given attribute with given value ex:
+
+option[selected=true] {
+	font:bold;
+}
+
+Pseudo-class selector
+A pseudo-class is used to define a special state of an element. ex:
+
+div:hover{
+	background-color:blue;
+}
+a:visited{
+	background-color:purple;
+}
+
+
+
+
+

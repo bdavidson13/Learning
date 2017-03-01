@@ -1,0 +1,62 @@
+H1{
+	color:maroon;
+}
+
+html{
+	height:100%;
+}
+body {
+	background-image: url("wood-background.jpg");
+	margin: 0;
+	min-height: 90%;
+	padding-bottom: 5rem;
+	position: relative;
+}
+
+footer{
+	background-color: #efefef;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	position:absolute;
+	right: 0;
+	text-align: center;
+}
+
+ul{
+	width:50%
+}
+
+.todo{
+		color:green;
+		font-style: italic;
+		font-weight:boldest;
+}
+
+.todo li:hover{
+	font-style:oblique;
+}
+
+.selectors:hover{
+	background-color:efefef;
+	font:boldest;
+}
+
+.chart-header{
+	border-style:solid;
+	font:bolder;
+	font-size: 14pt;
+	width:100%;
+}
+.chart-content{
+	border-style:solid;
+	width:100%;
+}
+#specificityChart{
+	display:inline-block;
+}
+.row{}
+.column{
+	padding: 10px;
+	
+}
