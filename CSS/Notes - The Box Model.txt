@@ -1,0 +1,31 @@
+The Box Model
+
+Every Html Element on a webpage will create a box
+
+Div
+
+3 Key box properties 
+	- Border
+		Most are not visible by default
+		Can specify width style and color
+	- Padding
+		Adds space between border of a box and the content of the box
+	- Margin
+		Space between box and any adjecent elements
+		While padding pushes content inward margin pushes boxes away from other boxes
+		When there are multiple adjecent boxes with margins the margins will merge to the largest margin
+			ex1: el 1 has bottom margin of 5px directly below it el 2 has top margin of 5px
+			     the result is 5px space between them
+			ex2: el 1 has bottom margin of 2px and directly below it el 2 has top margin of 7px
+				 the result is a 7px space between them
+		this only applies to top and bottom
+	- You can set the Border, Padding and Margin for each side of a box
+	
+width
+	setting width sets the width of the content of a box
+		this does not take padding or margin into account so if you extra margin the total size will expand
+	
+	
+Display vs Visibility
+
+Visibility keeps space allocated display does not
