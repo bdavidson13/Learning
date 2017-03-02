@@ -1,4 +1,5 @@
 H1{
+	text-align:center;
 	color:maroon;
 }
 
@@ -11,6 +12,7 @@ body {
 	min-height: 90%;
 	padding-bottom: 5rem;
 	position: relative;
+	border: 5px solid green;
 }
 
 footer{
@@ -22,15 +24,14 @@ footer{
 	right: 0;
 	text-align: center;
 }
-
 ul{
-	width:50%
+	margin-left:50%;
+	overflow: 
 }
-
 .todo{
-		color:green;
-		font-style: italic;
-		font-weight:boldest;
+	color:green;
+	font-style: italic;
+	font-weight:boldest;
 }
 
 .todo li:hover{
@@ -46,17 +47,25 @@ ul{
 	border-style:solid;
 	font:bolder;
 	font-size: 14pt;
-	width:100%;
 }
 .chart-content{
-	border-style:solid;
+	border-style:none solid solid solid;
+}
+.content-container{
+	max-width:25%;
+	border: 2px solid blue;
+}
+.content-section{
+	display:inline-block;
+	border: 5px solid;
 	width:100%;
 }
-#specificityChart{
-	display:inline-block;
+.row{
+	border-top:solid !important;
 }
-.row{}
 .column{
-	padding: 10px;
+	border-right:solid;
+	text-align:center;
+	padding:0 10px 0 10px;
 	
 }

@@ -4,70 +4,79 @@
 	<title> CSS Learning</title>
 	</head>
 	<body>
-		<h1> Selectors </h1>
-		<ul>
-			<li><span class="selectors">Simple Type Selectors</span></li>
-			<li><span class="selectors">Stack Selectors</span></li>
-			<li><span class="selectors">Descendant Selectors</span></li>
-			<li><span class="selectors">Child selectors</span></li>
-			<li><span class="selectors">Attribute selector</span></li>
-			<li><span class="selectors">Pseudo-class selector</span></li>
-		</ul>
-		<h1> TODO </h1>
-		<div class="todo">
-			<ol>
-			<li>Make Specificity Chart look good</li>
-			<li>Make Specificity Chart legend</li>
-			<li>Center H1 tags</li>
-			</ol>
+		<div id="selctorTypes" class="content-section">
+			<div class="content-container">
+				<h1>Selectors</h1>
+				<ul>
+					<li><span class="selectors">Simple Type Selectors</span></li>
+					<li><span class="selectors">Stack Selectors</span></li>
+					<li><span class="selectors">Descendant Selectors</span></li>
+					<li><span class="selectors">Child selectors</span></li>
+					<li><span class="selectors">Attribute selector</span></li>
+					<li><span class="selectors">Pseudo-class selector</span></li>
+				</ul>
+			</div>
 		</div>
-		<div id="specificityChart">
-			<h1> Specificity Chart</h1>
-			<div class="chart-header">
-				<div class="row">
-					<span class="column">Rule</span>
-					<span class="column">A</span>
-					<span class="column">B</span>
-					<span class="column">C</span>
-					<span class="column">Specificty Rating</span>
+		<div id="todoList" class="content-section">
+			<div class="content-container">
+				<h1> TODO </h1>
+				<div class="todo">
+					<ol>
+					<li>Make Specificity Chart look good</li>
+					<li>Make Specificity Chart legend</li>
+					<li>Center H1 tags</li>
+					</ol>
 				</div>
 			</div>
-			<div class="chart-content">
-			
-				<div class="row">
-					<span class="column">*(wild card)</span>
-					<span class="column">0</span>
-					<span class="column">0</span>
-					<span class="column">0</span>
-					<span class="column">0</span>
+		</div>
+		<div id="specificityChart" class="content-section">
+			<div class="content-container">
+				<h1> Specificity Chart</h1>
+				<div class="chart-header">
+					<div class="row">
+						<span class="column">Rule</span>
+						<span class="column">A</span>
+						<span class="column">B</span>
+						<span class="column">C</span>
+						<span class="column">Specificty Rating</span>
+					</div>
 				</div>
-				<div class="row">
-					<span class="column">LI</span>
-					<span class="column">0</span>
-					<span class="column">0</span>
-					<span class="column">1</span>
-					<span class="column">1</span>
-				</div>
-				<div class="row">
-					<span class="column">UL LI</span>
-					<span class="column">0</span>
-					<span class="column">0</span>
-					<span class="column">2</span>
-					<span class="column">2</span>
-				</div>
-				<div class="row">
-					<span class="column">LI.nav</span>
-					<span class="column">0</span>
-					<span class="column">1</span>
-					<span class="column">1</span>
-					<span class="column">11</span>
-				</div>
-				<div class="row">
-					<span class="column">#content</span>
-					<span class="column">1</span>
-					<span class="column">0</span>
-					<span class="column">0</span>
-					<span class="column">100</span>
+				<div class="chart-content">
+					<div class="row">
+						<span class="column">*(wild card)</span>
+						<span class="column">0</span>
+						<span class="column">0</span>
+						<span class="column">0</span>
+						<span class="column">0</span>
+					</div>
+					<div class="row">
+						<span class="column">LI</span>
+						<span class="column">0</span>
+						<span class="column">0</span>
+						<span class="column">1</span>
+						<span class="column">1</span>
+					</div>
+					<div class="row">
+						<span class="column">UL LI</span>
+						<span class="column">0</span>
+						<span class="column">0</span>
+						<span class="column">2</span>
+						<span class="column">2</span>
+					</div>
+					<div class="row">
+						<span class="column">LI.nav</span>
+						<span class="column">0</span>
+						<span class="column">1</span>
+						<span class="column">1</span>
+						<span class="column">11</span>
+					</div>
+					<div class="row">
+						<span class="column">#content</span>
+						<span class="column">1</span>
+						<span class="column">0</span>
+						<span class="column">0</span>
+						<span class="column">100</span>
+					</div>
 				</div>
 			</div>
 		</div>
