@@ -24,9 +24,8 @@ footer{
 	right: 0;
 	text-align: center;
 }
-ul{
-	margin-left:50%;
-	overflow: 
+ul,ol{
+	padding-left:33%;
 }
 .todo{
 	color:green;
