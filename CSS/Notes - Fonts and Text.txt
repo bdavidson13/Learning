@@ -1,0 +1,17 @@
+Fonts and Texts
+
+Serif font : has some embellishments 
+sans-serif font : no embellishments. (the default text in notepadd ++ is serif)
+sans-serif is believed to be easier to read on LCD screens
+
+when createing a rule about font family you can provide as many as you want, comma separated,
+and the browser will pick the first one that matches
+
+fonts are inheritted. If you set font on body all the divs, anchors, spans, etc.. will pick it up
+
+Font sizes
+	Absolute 
+		usually in pixels (px) Gives precise control. doesn't allow scaling (I don't think)
+	Relative
+		in percentages or em's gives size based on a baseline ex 2em is twice the size of baseline
+		relative sizes can scale when zooming in and out

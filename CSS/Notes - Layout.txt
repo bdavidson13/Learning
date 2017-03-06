@@ -1,0 +1,26 @@
+Layout
+
+Position
+
+you can position any html element with any of four values:
+	1. Static (default) Static positioning stacks up elements 
+	   one after the other down the page
+	   
+	2. Relative position moves an element from it's default position 
+	   in some direction
+	   if you set an elment to relative you can then set the top,right,
+	   bottom and left properties shifting it 
+	   the positioning is oppisite so putting a top 20px moves element down 20px
+	   
+	3. Absolute moves an element to specific position relative to the body of the document
+	
+	4. Fixed is similar to absolute but it's relative to the window not the body
+	   this is ideal for taskbars/header bars and footer
+	
+
+You can position elements on top of other elements
+
+Floating and Clearing
+
+Floating elements can shift to the left or right of a line and allow elements to flow up beside it 
+if theres enough room

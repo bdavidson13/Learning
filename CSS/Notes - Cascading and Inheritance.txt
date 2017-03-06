@@ -1,0 +1,62 @@
+Cascading and Inheritiance
+
+Default Stylesheet
+	- Browser style sheet
+	- Least weight
+User Stylesheet
+	- User Defined, but not for site but for your browser
+	- More weight than default less than author
+Author Stylesheet
+	- Your typical CSS file 
+	- More weight than User or Default less than inline style
+inline styles
+
+When browser sees conflicting rules from same source it goes with last one written
+	- this is also true with different style sheets
+		Sheet1
+			p{
+				color:green;
+			}
+		Sheet2
+			p{
+				color:grey;
+			}
+		<html>
+			<Head>
+				<link rel="stylesheet" href="Sheet2.css" type="text/css">
+				<link rel="stylesheet" href="Sheet1.css" type="text/css">
+				...
+		any pagraph text would be green since Sheet1 was loaded last
+	
+Specficity can also determine which rule will win out. 
+	- Rule with highest specficity wins out
+		speficity Ratings A B C	
+			C : Count of Type selectors
+			B : Count of Class and attribute Selectors
+			A : Count of ID selectors
+		
+		example
+		
+		  rule 			| A | B | C | Specifiicty Rating
+		*(wild card) 	| 0 | 0	| 0 | 		0
+		LI 				| 0 | 0 | 1 | 		1
+		UL LI 			| 0 | 0 | 2 | 		2
+		LI.nav 			| 0 | 1 | 1 |      11
+		#content 		| 1 | 0 | 0 | 	  100
+		
+Specificity winning out only works for rules you set for that selectors
+
+so if you have
+
+#content {
+	background-color:green;
+}
+
+p{
+	background-color:grey;
+	font-size: 12pt;
+}
+
+<p id="content">This text here </p>
+
+the background color would be green and the font size would be 12 pt.
