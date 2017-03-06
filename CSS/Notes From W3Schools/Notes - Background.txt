@@ -1,0 +1,60 @@
+Background Images
+	By default, the background-image property repeats an image both horizontally and vertically
+	if you wish to only repeat vertically or only repeat horizontally use the background-repeat rule:
+		repeat horizontally - background-repeat: repeat-x;
+		repeat vertically - backround-repeat: repeat-y;
+	if you only wish to show a background image once you also use background-repeat:
+		dispaly once - backround-repeat: no-repeat;
+	
+	you can position an image using background-position
+		you can use named values : left top, right bottom, center top
+			if you only specify one keyword, the other value willbe "center"
+		can use x y (either relative or absolute)
+			if you only specify one the other will be 50%
+			you can mix absolute and relative
+				background-position: 50% 45px;
+	
+	you can specify if background image scrolls or stay's in place
+		you can tell background to :
+			scroll - The background scrolls along with the element. this is default
+			fixed - The background is fixed with regard to the viewport
+			local - The background scrolls along with the element's contents
+		example:
+			{
+				background-image: url('flower.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+	
+			
+	other background rules :
+		background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+			The background-blend-mode property defines the blending mode of each background layer (color and/or image).
+	
+		background-clip: border-box|padding-box|content-box|initial|inherit;
+			The background-clip property specifies the painting area of the background.
+			
+		background-origin: padding-box|border-box|content-box|initial|inherit;
+			The background-origin property specifies where the background image is positioned.
+				If the background-attachment property is set to "fixed", this property has no effect.
+				
+		background-size: auto|length|cover|contain|initial|inherit;
+			The background-size property specifies the size of the background images.
+				auto - 	Default value. The background-image contains its width and height
+				
+				length - Sets the width and height of the background image. The first 
+						 value sets the width, the second value sets the height. If only one 
+						 value is given, the second is set to "auto"
+						
+				percentage - Sets the width and height of the background image in percent of 
+						     the parent element. The first value sets the width, the second 
+							 value sets the height. If only one value is given, the second is 
+							 set to "auto"
+			
+				contain - Scale the image to the largest size such that both its width and 
+						  its height can fit inside the content area
+						  
+						  
+background short hand
+ background: color image repeat attachment position;
+	It does not matter if one of the property values is missing, as long as the other ones are in this order.
